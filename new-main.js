@@ -77,9 +77,6 @@ emojiOne.src = selectedEmojis[0];
 emojiTwo.src = selectedEmojis[1];
 emojiThree.src = selectedEmojis[2];
 
-picker.addEventListener('data:ready', event => {
-  console.log(event.data);
-});
 
 
 //**For every turn (emoji selection)**
