@@ -85,7 +85,7 @@ var attempts = 0
 
 
 picker.addEventListener('emoji:select', event => {
-    document.getElementById("mainTitle").innerHTML = event.url;
+    document.getElementById("headerTitle").innerHTML = event.url;
   console.log('%cEmoji selected:', 'color:lightblue', '\n', event.emoji);
   if(emojiArray.length > 0){
     emojiSelected(event.url)
