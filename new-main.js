@@ -12,6 +12,7 @@ const picker = createPicker({
     showSearch: false,
     emojisPerRow: 7,
     visibleRows: 7,
+    emojiVersion: 14
     rootElement: container,
     renderer: new TwemojiRenderer()
 });
@@ -85,6 +86,7 @@ var attempts = 0
 
 document.getElementById("headerTitle").innerHTML = emojiOne.src;
 picker.addEventListener('emoji:select', event => {
+    document.getElementById("headerTitle").innerHTML = event.url;
   console.log('%cEmoji selected:', 'color:lightblue', '\n', event.emoji);
   if(emojiArray.length > 0){
     emojiSelected(event.url)
