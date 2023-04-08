@@ -85,11 +85,11 @@ function emojiSelected(url){
 
 function wrongEmoji(){
     for(var i = 0; i < emojiArray.length; i++){
-        emojiArray[i].style.backgroundColor = "red";
+        emojiArray[i].parentElement.style.backgroundColor = "red";
         }
   setTimeout(function() {
     for(var i = 0; i < emojiArray.length; i++){
-        emojiArray[i].style.backgroundColor = "white";
+        emojiArray[i].parentElement.style.backgroundColor = "white";
         }
   }, 170);
   console.log("%cWrong emoji!", "color:red;");
