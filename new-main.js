@@ -84,9 +84,13 @@ function emojiSelected(url){
 
 
 function wrongEmoji(){
-    document.getElementById("emoji-box").style.backgroundColor = "red";
+    for(var i = 0; i < emojiArray.length; i++){
+        emojiArray[i].style.backgroundColor = "red";
+        }
   setTimeout(function() {
-    document.getElementById("emoji-box").style.backgroundColor = "white";
+    for(var i = 0; i < emojiArray.length; i++){
+        emojiArray[i].style.backgroundColor = "white";
+        }
   }, 170);
   console.log("%cWrong emoji!", "color:red;");
   console.log("%cStill needed: ", "color:orange", + emojiArray.length, '\n', consoleLogSpacer);
