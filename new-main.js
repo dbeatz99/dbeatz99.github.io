@@ -102,7 +102,8 @@ function emojiSelected(url){
       return
     }
   }
-  wrongEmoji()
+
+
 }
 
 
