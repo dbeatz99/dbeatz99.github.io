@@ -84,9 +84,9 @@ function emojiSelected(url){
 
 
 function wrongEmoji(){
-    $('.emoji-box').parent().css('background-color', 'red')
+    document.getElementById("emoji-box").style.backgroundColor = "red";
   setTimeout(function() {
-    $('.emoji-box').parent().css('background-color', 'white')
+    document.getElementById("emoji-box").style.backgroundColor = "white";
   }, 170);
   console.log("%cWrong emoji!", "color:red;");
   console.log("%cStill needed: ", "color:orange", + emojiArray.length, '\n', consoleLogSpacer);
