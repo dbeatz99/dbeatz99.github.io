@@ -84,9 +84,8 @@ emojiThree.src = selectedEmojis[2];
 var attempts = 0
 
 
-picker.addEventListener('emoji:select', event => {
+picker.addEventListener('emoji:url', event => {
   console.log('%cEmoji selected:', 'color:lightblue', '\n', event.emoji);
-document.getElementById(emojiBoxTwo).innerHTML=event.url
   if(emojiArray.length > 0){
     emojiSelected(event.url)
   }
@@ -103,8 +102,7 @@ function emojiSelected(url){
       return
     }
   }
-
-
+  wrongEmoji()
 }
 
 
