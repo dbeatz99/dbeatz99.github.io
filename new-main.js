@@ -12,7 +12,7 @@ const picker = createPicker({
     showSearch: false,
     emojisPerRow: 7,
     visibleRows: 7,
-    emojiVersion: 14.0
+    emojiVersion: 14,
     rootElement: container,
     renderer: new TwemojiRenderer()
 });
